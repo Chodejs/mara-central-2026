@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import ModuleDetail from './pages/ModuleDetail';
 
 // Import our new pages
 import Home from './pages/Home';
@@ -23,6 +24,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/lessons/:slug" element={<ModuleDetail />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>
